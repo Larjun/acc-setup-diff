@@ -168,13 +168,12 @@ const data = {
         rideHeightMinFront: 55,
         rideHeightMinRear: 55
     },
-    // Add Ford Mustang GT3
     ford_mustang_gt3: {
         name: 'Ford Mustang GT3',
         tirePressureMin: 20.3,
-        casterFunc: (v) => v * 0.175 + 5.3, // Update
-        toeMins: [-0.4, -0.4],
-        wheelRates: [   // Fill In Vals
+        casterFunc: (v) => v * 0.175 + 5.3,
+        toeMins: [-0.2, -0.1],
+        wheelRates: [
             [105, 120, 135, 150, 165, 180],
             [90, 105, 120, 135, 150, 165]
         ],
