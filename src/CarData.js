@@ -666,6 +666,102 @@ const data = {
         brakeBiasMin: 56,
         rideHeightMinFront: 125,
         rideHeightMinRear: 125
+    },
+
+    // GT2
+    audi_r8_lms_gt2: {
+        name: "Audi R8 LMS GT2",
+        tirePressureMin: 17,
+        casterFunc: (v) => v * (13.3 - 6.6) / 34 + 6.6,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [142, 160],
+            [146, 163]
+        ],
+        steeringRatioMin: 12,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 80,
+        rideHeightMinRear: 80,
+        minPreload: 10
+    },
+    ktm_xbow_gt2: {
+        name: "KTM X-Bow GT2",
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.215 + 3.2,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [87, 97, 107, 117, 127],
+            [81, 91, 101, 111, 121, 131]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 44,
+        rideHeightMinFront: 75,
+        rideHeightMinRear: 200,
+        minPreload: 10,
+        minWing: 1
+    },
+    maserati_mc20_gt2: {
+        name: "Maserati MC20 GT2",
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.18 + 8.5,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [165.18, 179.54, 193.9],
+            [173.913, 189.036, 204.158]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 55,
+        rideHeightMinFront: 80,
+        rideHeightMinRear: 80,
+        minWing: 1
+    },
+    mercedes_amg_gt2: {
+        name: "Mercedes-AMG GT2",
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.18 + 9.2,
+        toeMins: [-0.2, 0.0],
+        wheelRates: [
+            [78, 88, 104],
+            [66, 76, 86]
+        ],
+        steeringRatioMin: 10,
+        brakeBiasMin: 55,
+        rideHeightMinFront: 122,
+        rideHeightMinRear: 140,
+        minPreload: 10,
+        minWing: 1
+    },
+    porsche_935: {
+        name: "Porsche 935",
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.1 + 7.3,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [0, 0.001, 0.002, 0.003],
+            [0, 0.001, 0.002, 0.003]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 90,
+        rideHeightMinRear: 160,
+        minPreload: 0.1,
+        minWing: 1
+    },
+    porsche_991_gt2_rs_mr: {
+        name: "Porsche 991 GT2 RS Clubsport MR",
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.1 + 7.3,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [0, 0.001, 0.002, 0.003],
+            [0, 0.001, 0.002, 0.003]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 100,
+        rideHeightMinRear: 167,
+        minPreload: 0.1,
+        minWing: 1
     }
 }
 

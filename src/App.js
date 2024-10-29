@@ -35,7 +35,7 @@ const mechanicalSetup = [
     displayItem(s?.advancedSetup.mechanicalBalance.aRBFront),
     displayItem(s?.advancedSetup.mechanicalBalance.aRBRear)
   ]],
-  ['Diff preload [Nm]', (s) => [displayItem(s && s.advancedSetup.drivetrain.preload * 10 + 20)]],
+  ['Diff preload [Nm]', (s, c) => [displayItem(s && s.advancedSetup.drivetrain.preload * 10 + parseInt((c.minPreload ? c.minPreload : 20)))]],
   ['Brake power [%]', (s) => [displayItem(s && s.advancedSetup.mechanicalBalance.brakeTorque + 80)]],
   ['Brake bias [%]', (s, c) => [displayItem(s && s.advancedSetup.mechanicalBalance.brakeBias / 5 + c.brakeBiasMin)]],
   ['Steering ratio', (s, c) => [displayItem(s && s.basicSetup.alignment.steerRatio + c.steeringRatioMin)]],
@@ -57,8 +57,8 @@ const aeroSetup = [
     displayItem(s && s.advancedSetup.aeroBalance.rideHeight[2] + c.rideHeightMinRear)
   ]],
   ['Brake ducts', (s) => s?.advancedSetup.aeroBalance.brakeDuct.map((v) => displayItem(v))],
-  ['Splitter', (s) => [displayItem(s && s.advancedSetup.aeroBalance.splitter + 1)]],
-  ['Wing', (s) => [displayItem(s && s.advancedSetup.aeroBalance.rearWing)]]
+  ['Splitter', (s) => [displayItem(s && s.advancedSetup.aeroBalance.splitter)]],
+  ['Wing', (s, c) => [displayItem(s && s.advancedSetup.aeroBalance.rearWing + (c.minWing ? c.minWing : 0))]],
 ];
 
 const setupGroups = [
